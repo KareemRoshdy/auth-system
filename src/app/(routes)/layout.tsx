@@ -1,10 +1,18 @@
+import React from "react";
 import FloatingShape from "@/components/FloatingShape";
 import ToastProvider from "@/components/providers/ToastProvider";
-import React from "react";
+
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Auth System",
+  description:
+    "Authentication System login, register, reset-password, and sending emails using nodemailer.",
+};
 
 interface RoutesLayoutProps {
   children: React.ReactNode;
 }
+
 
 const RoutesLayout = ({ children }: RoutesLayoutProps) => {
   return (
